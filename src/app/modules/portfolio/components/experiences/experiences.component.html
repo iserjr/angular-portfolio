@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Últimas Experiências</h2>
+    <mat-accordion>
+        @for(item of arrayExperiences(); track item;){
+            <mat-expansion-panel>
+                <mat-expansion-panel-header class="disable_ripple">
+                    <mat-panel-title>
+                        <p>
+                            <strong>{{ item.title.strong }}</strong>
+                            {{ item.title.p }}
+                        </p>  
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <article [innerHTML]="item.text">Valow W</article>
+            </mat-expansion-panel>
+        }   
+    </mat-accordion>
+</div>

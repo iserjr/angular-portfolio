@@ -14,7 +14,7 @@
         <p>Desenvolvedor front-end | Angular | React</p>
         <p>Belo Horizonte, Minas Gerais, Brasil</p>
         <p>
-            Me interessei bastante pela área de desenvolvimento,
+            Me interessei muito pela área de desenvolvimento,
             devido a isso realizo projetos web responsivos usando Angular e React.
         </p>
 
@@ -62,5 +62,14 @@
                 </figcaption>
             </figure>
         </section>
+        <h2>Conhecimentos</h2>
+        <ul class="conhecimentos">
+            @for (item of arrayKnowledge(); track item) {
+                <li>
+                    <img [src]="item.src" alt="item.alt" Loading="lazy" width="22px" height="
+                    24px">
+                </li>
+            }
+        </ul>
     </div>
 </aside>

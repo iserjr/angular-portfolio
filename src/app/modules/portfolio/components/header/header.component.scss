@@ -9,6 +9,11 @@
         background: linear-gradient(90deg, var(--primary-10) 0%, var(--primary) 50%, var(--primary-10) 100%);
     }
 
+    h2{
+        text-align: center;
+        margin-top: 3.5rem;
+    }
+
     header, aside{
         display: flex;
         flex-direction: column;
@@ -80,6 +85,28 @@
                     }
                 }
             }
+        }
+    }
+
+    .conhecimentos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+
+        li{
+            flex: none;
+            width: 50px;
+            height: 50px;
+            background: var(--secondary-background);
+            border-radius: 7px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 

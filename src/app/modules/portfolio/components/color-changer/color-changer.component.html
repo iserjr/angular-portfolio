@@ -1,0 +1,29 @@
+<h2>Customize o site!</h2>
+
+
+<input 
+    [(colorPicker)]="color1"
+    [style.background]="color1" 
+    id="picker1"
+    (cpSliderChange)="updateColors(color1, '--primary')"
+>
+
+<img 
+    src="assets/icons/colorwheel.png" 
+    alt="Ícone para o github"
+    width="79px"
+    height="80px"
+    style="cursor: pointer;"
+>
+
+
+<input 
+    [(colorPicker)]="color2" 
+    [style.background]="color2" 
+    id="picker2"
+    (cpSliderChange)="updateColors(color2, '--primary-10')"
+>
+
+<button (click)="invertColors()">aaaaaaaaaaaaaaaaa</button>
+
+

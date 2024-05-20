@@ -1,0 +1,15 @@
+:host{
+    margin-top: 18px;
+    padding: 25px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2{
+        text-align: center;
+        color: var(--grey);
+        margin: 0 0 15px 0;
+    }
+}

@@ -9,6 +9,7 @@
     <h1>Sergio Silva</h1>
 </header>
 
+
 <aside>
     <div class="container">
         <p>Desenvolvedor front-end | Angular | React</p>
@@ -17,7 +18,14 @@
             Me interessei muito pela área de desenvolvimento,
             devido a isso realizo projetos web responsivos usando Angular e React.
         </p>
-
+        <ul class="conhecimentos">
+            @for (item of arrayKnowledge(); track item) {
+                <li>
+                    <img [src]="item.src" alt="item.alt" Loading="lazy" width="22px" height="
+                    24px">
+                </li>
+            }
+        </ul>
         <nav>
             <ul>
                 <li>
@@ -62,14 +70,6 @@
                 </figcaption>
             </figure>
         </section>
-        <h2>Conhecimentos</h2>
-        <ul class="conhecimentos">
-            @for (item of arrayKnowledge(); track item) {
-                <li>
-                    <img [src]="item.src" alt="item.alt" Loading="lazy" width="22px" height="
-                    24px">
-                </li>
-            }
-        </ul>
+
     </div>
 </aside>

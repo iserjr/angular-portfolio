@@ -6,6 +6,14 @@ import { IProjects } from '../../interface/IProjects.interface';
 
 //Material
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+
+//Enum
+import { EDialigPanelClass } from '../../enum/EDialogPanelClass.enum';
+
+//Dialog
+import { DialogProjectsComponent } from '../dialog/dialog-projects/dialog-projects.component';
+
+
 @Component({
   selector: 'app-projects',
   standalone: true,
@@ -23,7 +31,7 @@ export class ProjectsComponent {
       title: "Lista de Tarefas",
       width: "100px",
       height: "51px",
-      description: "",
+      description: '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript.</p> <p>Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.</p>',
       links: [
         {
           name: "Acesse o projeto!",
@@ -32,5 +40,12 @@ export class ProjectsComponent {
       ]
     },
   ])
+
+  public openDialog(data: IProjects){
+    this.#dialog.open(DialogProjectsComponent,{
+      data,
+      panelClass: EDialigPanelClass.PROJECTS,
+    })
+  }
 
 }

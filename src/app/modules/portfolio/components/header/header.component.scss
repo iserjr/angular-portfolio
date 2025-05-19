@@ -110,6 +110,17 @@
         }
     }
 
+    .myName{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 46px;
+        background:linear-gradient(in hsl, var(--black) 40%, var(--primary) 70%);
+        -webkit-background-clip: text;
+        color: transparent;
+        
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+
     @media (max-width: 750px){
         aside nav ul, section{
             flex-direction: column;
